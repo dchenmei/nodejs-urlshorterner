@@ -27,7 +27,7 @@ app.get('/', function(req, res){
 });
 
 app.post("/api/shorturl/new", function (req, res) {
-	res.json({request : 'received'});
+	res.json({"original_url" : req.body.url, "short_url" : 111});
 });
 
 
